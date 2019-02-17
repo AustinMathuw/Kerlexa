@@ -1,0 +1,148 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "saturn v",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateSettingsIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        },
+        {
+          "name": "StageRocketIntent",
+          "slots": [],
+          "samples": [
+            "stage rocket"
+          ]
+        },
+        {
+          "name": "SendCommandIntent",
+          "slots": [
+            {
+              "name": "command",
+              "type": "commands"
+            }
+          ],
+          "samples": [
+            "{command} up",
+            "{command} left",
+            "{command} right",
+            "{command} clockwise",
+            "{command} the ship"
+          ]
+        },
+        {
+          "name": "GetAttributeIntent",
+          "slots": [
+            {
+              "name": "attribute",
+              "type": "attributes"
+            }
+          ],
+          "samples": [
+            "what is my {attribute}",
+            "what {attribute} am I orbiting"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "pitch"
+              }
+            },
+            {
+              "name": {
+                "value": "yaw"
+              }
+            },
+            {
+              "name": {
+                "value": "roll"
+              }
+            }
+          ],
+          "name": "commands"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "velocity"
+              }
+            },
+            {
+              "name": {
+                "value": "altitude"
+              }
+            },
+            {
+              "name": {
+                "value": "body"
+              }
+            },
+            {
+              "name": {
+                "value": "mass"
+              }
+            }
+          ],
+          "name": "attributes"
+        }
+      ]
+    }
+  }
+}

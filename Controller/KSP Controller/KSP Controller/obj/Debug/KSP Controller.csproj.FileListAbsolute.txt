@@ -1,0 +1,20 @@
+C:\Users\MLH Admin\Desktop\CWRUHack\controller\KSP Controller\bin\Plugins\KSP Controller.dll
+C:\Users\MLH Admin\Desktop\CWRUHack\controller\KSP Controller\bin\Plugins\KSP Controller.pdb
+C:\Users\MLH Admin\Desktop\CWRUHack\controller\KSP Controller\bin\Plugins\Kerlexa\KSP Controller.dll
+C:\Users\MLH Admin\Desktop\CWRUHack\controller\KSP Controller\bin\Plugins\Kerlexa\KSP Controller.pdb
+C:\Users\MLH Admin\Desktop\CWRUHack\controller\KSP Controller\Outputs\Plugins\Kerlexa\KSP Controller.dll
+C:\Users\MLH Admin\Desktop\CWRUHack\controller\KSP Controller\Outputs\Plugins\Kerlexa\KSP Controller.pdb
+C:\Users\MLH Admin\Desktop\CWRUHack\controller\KSP Controller\KSP Controller\obj\Debug\KSP Controller.csprojAssemblyReference.cache
+C:\Users\MLH Admin\Desktop\CWRUHack\controller\KSP Controller\KSP Controller\obj\Debug\KSP Controller.csproj.CoreCompileInputs.cache
+C:\Users\MLH Admin\Desktop\CWRUHack\controller\KSP Controller\Output\Kerlexa\Plugins\KerlexaCore\KSP Controller.dll
+C:\Users\MLH Admin\Desktop\CWRUHack\controller\KSP Controller\Output\Kerlexa\Plugins\KerlexaCore\KSP Controller.pdb
+C:\Users\MLH Admin\Desktop\CWRUHack\controller\KSP Controller\KSP Controller\obj\Debug\KSP Controller.csproj.CopyComplete
+C:\Users\MLH Admin\Desktop\CWRUHack\controller\KSP Controller\KSP Controller\obj\Debug\KSP Controller.dll
+C:\Users\MLH Admin\Desktop\CWRUHack\controller\KSP Controller\KSP Controller\obj\Debug\KSP Controller.pdb
+C:\Users\MLH Admin\Desktop\CWRUHack\CWRUHackathon2019\Controller\KSP Controller\Output\Kerlexa\Plugins\KerlexaCore\KSP Controller.dll
+C:\Users\MLH Admin\Desktop\CWRUHack\CWRUHackathon2019\Controller\KSP Controller\Output\Kerlexa\Plugins\KerlexaCore\KSP Controller.pdb
+C:\Users\MLH Admin\Desktop\CWRUHack\CWRUHackathon2019\Controller\KSP Controller\KSP Controller\obj\Debug\KSP Controller.csprojAssemblyReference.cache
+C:\Users\MLH Admin\Desktop\CWRUHack\CWRUHackathon2019\Controller\KSP Controller\KSP Controller\obj\Debug\KSP Controller.csproj.CoreCompileInputs.cache
+C:\Users\MLH Admin\Desktop\CWRUHack\CWRUHackathon2019\Controller\KSP Controller\KSP Controller\obj\Debug\KSP Controller.csproj.CopyComplete
+C:\Users\MLH Admin\Desktop\CWRUHack\CWRUHackathon2019\Controller\KSP Controller\KSP Controller\obj\Debug\KSP Controller.dll
+C:\Users\MLH Admin\Desktop\CWRUHack\CWRUHackathon2019\Controller\KSP Controller\KSP Controller\obj\Debug\KSP Controller.pdb

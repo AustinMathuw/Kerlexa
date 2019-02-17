@@ -1,0 +1,366 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2CAEEC5-A8F4-47B6-A5D9-FEC59A827252}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>PubNubAPI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>PubNub</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\bin\Debug\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ThirdParty\BouncyCastle.dll</HintPath>
+    </Reference>
+    <Reference Include="crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Unity SDK\UnitySDK\Assets\Games SDK for Alexa\Deps\PubNub\ThirdParty\Metro\crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonFx.Json, Version=1.4.1003.3008, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ThirdParty\JsonFx.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="MarkerMetro.Unity.WinLegacy, Version=1.8.0.18, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ThirdParty\MarkerMetro.Unity.WinLegacy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\bin\Debug\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\PubNub\v15\.suo" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="Builders.meta" />
+    <None Include="Builders\ChannelGroup.meta" />
+    <None Include="Builders\ChannelGroup\AddChannelsToChannelGroupRequestBuilder.cs.meta" />
+    <None Include="Builders\ChannelGroup\DeleteChannelGroupRequestBuilder.cs.meta" />
+    <None Include="Builders\ChannelGroup\GetAllChannelsForGroupRequestBuilder.cs.meta" />
+    <None Include="Builders\ChannelGroup\GetChannelGroupsRequestBuilder.cs.meta" />
+    <None Include="Builders\ChannelGroup\RemoveChannelsFromGroupRequestBuilder.cs.meta" />
+    <None Include="Builders\History.meta" />
+    <None Include="Builders\History\DeleteMessagesRequestBuilder.cs.meta" />
+    <None Include="Builders\History\FetchMessagesRequestBuilder.cs.meta" />
+    <None Include="Builders\History\HistoryRequestBuilder.cs.meta" />
+    <None Include="Builders\Presence.meta" />
+    <None Include="Builders\Presence\GetStateRequestBuilder.cs.meta" />
+    <None Include="Builders\Presence\HereNowRequestBuilder.cs.meta" />
+    <None Include="Builders\Presence\PresenceRequestBuilder.cs.meta" />
+    <None Include="Builders\Presence\SetStateRequestBuilder.cs.meta" />
+    <None Include="Builders\Presence\WhereNowRequestBuilder.cs.meta" />
+    <None Include="Builders\PubNubNonSubBuilder.cs.meta" />
+    <None Include="Builders\PubSub.meta" />
+    <None Include="Builders\PubSub\LeaveRequestBuilder.cs.meta" />
+    <None Include="Builders\PubSub\PublishRequestBuilder.cs.meta" />
+    <None Include="Builders\PubSub\SubscribeRequestBuilder.cs.meta" />
+    <None Include="Builders\Push.meta" />
+    <None Include="Builders\Push\AddChannelsToPushRequestBuilder.cs.meta" />
+    <None Include="Builders\Push\ListPushProvisionsRequestBuilder.cs.meta" />
+    <None Include="Builders\Push\RemoveAllPushChannelsForDeviceRequestBuilder.cs.meta" />
+    <None Include="Builders\Push\RemoveChannelsFromPushRequestBuilder.cs.meta" />
+    <None Include="Builders\TimeRequestBuilder.cs.meta" />
+    <None Include="Crypto.meta" />
+    <None Include="Crypto\MD5.cs.meta" />
+    <None Include="Crypto\PubnubCrypto.cs.meta" />
+    <None Include="Editor.meta" />
+    <None Include="EndPoints.meta" />
+    <None Include="EndPoints\ChannelGroup.meta" />
+    <None Include="EndPoints\ChannelGroup\AddChannelsToChannelGroupBuilder.cs.meta" />
+    <None Include="EndPoints\ChannelGroup\DeleteChannelGroupBuilder.cs.meta" />
+    <None Include="EndPoints\ChannelGroup\GetAllChannelsForGroupBuilder.cs.meta" />
+    <None Include="EndPoints\ChannelGroup\GetChannelGroupsBuilder.cs.meta" />
+    <None Include="EndPoints\ChannelGroup\RemoveChannelsFromGroupBuilder.cs.meta" />
+    <None Include="EndPoints\HIstory.meta" />
+    <None Include="EndPoints\HIstory\DeleteMessagesBuilder.cs.meta" />
+    <None Include="EndPoints\HIstory\FetchBuilder.cs.meta" />
+    <None Include="EndPoints\HIstory\HistoryBuilder.cs.meta" />
+    <None Include="EndPoints\Presence.meta" />
+    <None Include="EndPoints\Presence\GetStateBuilder.cs.meta" />
+    <None Include="EndPoints\Presence\HereNowBuilder.cs.meta" />
+    <None Include="EndPoints\Presence\Presence.cs.meta" />
+    <None Include="EndPoints\Presence\SetStateBuilder.cs.meta" />
+    <None Include="EndPoints\Presence\WhereNowBuilder.cs.meta" />
+    <None Include="EndPoints\PubSub.meta" />
+    <None Include="EndPoints\PubSub\FireBuilder.cs.meta" />
+    <None Include="EndPoints\PubSub\PublishBuilder.cs.meta" />
+    <None Include="EndPoints\PubSub\SubscribeBuilder.cs.meta" />
+    <None Include="EndPoints\PubSub\UnsubscribeAllBuilder.cs.meta" />
+    <None Include="EndPoints\PubSub\UnsubscribeBuilder.cs.meta" />
+    <None Include="EndPoints\Push.meta" />
+    <None Include="EndPoints\Push\AddChannelsToPushBuilder.cs.meta" />
+    <None Include="EndPoints\Push\ListPushProvisionsBuilder.cs.meta" />
+    <None Include="EndPoints\Push\RemoveAllPushChannelsForDeviceBuilder.cs.meta" />
+    <None Include="EndPoints\Push\RemoveChannelsFromPushBuilder.cs.meta" />
+    <None Include="EndPoints\TimeBuilder.cs.meta" />
+    <None Include="Entities.meta" />
+    <None Include="Entities\ChannelEntity.cs.meta" />
+    <None Include="Entities\ChannelIdentity.cs.meta" />
+    <None Include="Entities\ChannelParameters.cs.meta" />
+    <None Include="Entities\QueueStorage.cs.meta" />
+    <None Include="Enum.meta" />
+    <None Include="Enum\HTTPMethod.cs.meta" />
+    <None Include="Enum\PNCurrentRequestType.cs.meta" />
+    <None Include="Enum\PNErrorData.cs.meta" />
+    <None Include="Enum\PNHeartbeatNotificationOption.cs.meta" />
+    <None Include="Enum\PNLogVerbosity.cs.meta" />
+    <None Include="Enum\PNOperationType.cs.meta" />
+    <None Include="Enum\PNPushType.cs.meta" />
+    <None Include="Enum\PNReconnectionPolicy.cs.meta" />
+    <None Include="Enum\PNStatusCategory.cs.meta" />
+    <None Include="Events.meta" />
+    <None Include="Events\CustomEventArgs.cs.meta" />
+    <None Include="Events\EventExtenstions.cs.meta" />
+    <None Include="Examples.meta" />
+    <None Include="ExampleScene.unity" />
+    <None Include="ExampleScene.unity.meta" />
+    <None Include="ExceptionHandlers.meta" />
+    <None Include="ExceptionHandlers\ExceptionHandlerEventArgs.cs.meta" />
+    <None Include="Helpers.meta" />
+    <None Include="Helpers\CommonText.cs.meta" />
+    <None Include="Helpers\CustomException.cs.meta" />
+    <None Include="Helpers\Helpers.cs.meta" />
+    <None Include="Helpers\SafeDictionary.cs.meta" />
+    <None Include="Helpers\Utility.cs.meta" />
+    <None Include="Interface.meta" />
+    <None Include="Interface\IPubNubNoChannelsBuilder.cs.meta" />
+    <None Include="Interface\IPubNubNonSubscribeBuilder.cs.meta" />
+    <None Include="Interface\IPubNubSubcribeBuilder.cs.meta" />
+    <None Include="Logger.meta" />
+    <None Include="Logger\PNLoggingMethod.cs.meta" />
+    <None Include="Managers.meta" />
+    <None Include="Managers\PNLatencyManager.cs.meta" />
+    <None Include="Managers\QueueManager.cs.meta" />
+    <None Include="Managers\RequestQueue.cs.meta" />
+    <None Include="Models.meta" />
+    <None Include="Models\Consumer.meta" />
+    <None Include="Models\Consumer\ChannelGroup.meta" />
+    <None Include="Models\Consumer\ChannelGroup\PNChannelGroupsAddChannelResult.cs.meta" />
+    <None Include="Models\Consumer\ChannelGroup\PNChannelGroupsAllChannelsResult.cs.meta" />
+    <None Include="Models\Consumer\ChannelGroup\PNChannelGroupsDeleteGroupResult.cs.meta" />
+    <None Include="Models\Consumer\ChannelGroup\PNChannelGroupsListAllResult.cs.meta" />
+    <None Include="Models\Consumer\ChannelGroup\PNChannelGroupsRemoveChannelResult.cs.meta" />
+    <None Include="Models\Consumer\History.meta" />
+    <None Include="Models\Consumer\History\PNDeleteMessagesResult.cs.meta" />
+    <None Include="Models\Consumer\History\PNFetchMessagesResult.cs.meta" />
+    <None Include="Models\Consumer\History\PNHistoryResult.cs.meta" />
+    <None Include="Models\Consumer\PNResult.cs.meta" />
+    <None Include="Models\Consumer\PNStatus.cs.meta" />
+    <None Include="Models\Consumer\PNTimeResult.cs.meta" />
+    <None Include="Models\Consumer\Presence.meta" />
+    <None Include="Models\Consumer\Presence\PNGetStateResult.cs.meta" />
+    <None Include="Models\Consumer\Presence\PNHereNowResult.cs.meta" />
+    <None Include="Models\Consumer\Presence\PNPresenceHeartbeatResult.cs.meta" />
+    <None Include="Models\Consumer\Presence\PNSetStateResult.cs.meta" />
+    <None Include="Models\Consumer\Presence\PNWhereNowResult.cs.meta" />
+    <None Include="Models\Consumer\Publish.meta" />
+    <None Include="Models\Consumer\Publish\PNPublishResult.cs.meta" />
+    <None Include="Models\Consumer\PubSub.meta" />
+    <None Include="Models\Consumer\PubSub\PNLeaveRequestResult.cs.meta" />
+    <None Include="Models\Consumer\PubSub\PNMessageResult.cs.meta" />
+    <None Include="Models\Consumer\PubSub\PNPresenceEvent.cs.meta" />
+    <None Include="Models\Consumer\PubSub\PNPresenceEventResult.cs.meta" />
+    <None Include="Models\Consumer\PubSub\SubscribeEnvelope.cs.meta" />
+    <None Include="Models\Consumer\PubSub\SubscribeMessage.cs.meta" />
+    <None Include="Models\Consumer\PubSub\TimetokenMetadata.cs.meta" />
+    <None Include="Models\Consumer\Push.meta" />
+    <None Include="Models\Consumer\Push\PNPushAddChannelResult.cs.meta" />
+    <None Include="Models\Consumer\Push\PNPushListProvisionsResult.cs.meta" />
+    <None Include="Models\Consumer\Push\PNPushRemoveAllChannelsResult.cs.meta" />
+    <None Include="Models\Consumer\Push\PNPushRemoveChannelResult.cs.meta" />
+    <None Include="Models\Server.meta" />
+    <None Include="Models\Server\BuildRequests.cs.meta" />
+    <None Include="Models\Server\RequestState.cs.meta" />
+    <None Include="Models\Server\Subscription.cs.meta" />
+    <None Include="PlayModeTests.meta" />
+    <None Include="PubNub.cs.meta" />
+    <None Include="PubNubUnity.meta" />
+    <None Include="PubNubUnity\PNConfiguration.cs.meta" />
+    <None Include="PubNubUnity\PubNubUnity.cs.meta" />
+    <None Include="PubNubUnity\PubNubUnityBase.cs.meta" />
+    <None Include="Serialization.meta" />
+    <None Include="Serialization\JSONSerializer.cs.meta" />
+    <None Include="ThirdParty.meta" />
+    <None Include="ThirdParty\BouncyCastle.dll.meta" />
+    <None Include="ThirdParty\JsonFx.Json.dll.meta" />
+    <None Include="ThirdParty\MarkerMetro.Unity.WinLegacy.dll.meta" />
+    <None Include="ThirdParty\Metro.meta" />
+    <None Include="ThirdParty\Metro\crypto.dll.meta" />
+    <None Include="ThirdParty\Metro\JsonFx.Json.dll.meta" />
+    <None Include="ThirdParty\Metro\MarkerMetro.Unity.WinLegacy.dll.meta" />
+    <None Include="ThirdParty\MiniJSON.cs.meta" />
+    <None Include="WebRequest.meta" />
+    <None Include="WebRequest\PNUnityWebRequest.cs.meta" />
+    <None Include="WebRequest\UnityWebRequestWrapper.cs.meta" />
+    <None Include="Workers.meta" />
+    <None Include="Workers\HeartbeatWorker.cs.meta" />
+    <None Include="Workers\NonSubscribeWorker.cs.meta" />
+    <None Include="Workers\PresenceHeartbeatWorker.cs.meta" />
+    <None Include="Workers\SubscriptionWorker.cs.meta" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Builders\ChannelGroup\AddChannelsToChannelGroupRequestBuilder.cs" />
+    <Compile Include="Builders\ChannelGroup\DeleteChannelGroupRequestBuilder.cs" />
+    <Compile Include="Builders\ChannelGroup\GetAllChannelsForGroupRequestBuilder.cs" />
+    <Compile Include="Builders\ChannelGroup\GetChannelGroupsRequestBuilder.cs" />
+    <Compile Include="Builders\ChannelGroup\RemoveChannelsFromGroupRequestBuilder.cs" />
+    <Compile Include="Builders\History\DeleteMessagesRequestBuilder.cs" />
+    <Compile Include="Builders\History\FetchMessagesRequestBuilder.cs" />
+    <Compile Include="Builders\History\HistoryRequestBuilder.cs" />
+    <Compile Include="Builders\Presence\GetStateRequestBuilder.cs" />
+    <Compile Include="Builders\Presence\HereNowRequestBuilder.cs" />
+    <Compile Include="Builders\Presence\PresenceRequestBuilder.cs" />
+    <Compile Include="Builders\Presence\SetStateRequestBuilder.cs" />
+    <Compile Include="Builders\Presence\WhereNowRequestBuilder.cs" />
+    <Compile Include="Builders\PubNubNonSubBuilder.cs" />
+    <Compile Include="Builders\PubSub\LeaveRequestBuilder.cs" />
+    <Compile Include="Builders\PubSub\PublishRequestBuilder.cs" />
+    <Compile Include="Builders\PubSub\SubscribeRequestBuilder.cs" />
+    <Compile Include="Builders\Push\AddChannelsToPushRequestBuilder.cs" />
+    <Compile Include="Builders\Push\ListPushProvisionsRequestBuilder.cs" />
+    <Compile Include="Builders\Push\RemoveAllPushChannelsForDeviceRequestBuilder.cs" />
+    <Compile Include="Builders\Push\RemoveChannelsFromPushRequestBuilder.cs" />
+    <Compile Include="Builders\TimeRequestBuilder.cs" />
+    <Compile Include="Crypto\MD5.cs" />
+    <Compile Include="Crypto\PubnubCrypto.cs" />
+    <Compile Include="EndPoints\ChannelGroup\AddChannelsToChannelGroupBuilder.cs" />
+    <Compile Include="EndPoints\ChannelGroup\DeleteChannelGroupBuilder.cs" />
+    <Compile Include="EndPoints\ChannelGroup\GetAllChannelsForGroupBuilder.cs" />
+    <Compile Include="EndPoints\ChannelGroup\GetChannelGroupsBuilder.cs" />
+    <Compile Include="EndPoints\ChannelGroup\RemoveChannelsFromGroupBuilder.cs" />
+    <Compile Include="EndPoints\HIstory\DeleteMessagesBuilder.cs" />
+    <Compile Include="EndPoints\HIstory\FetchBuilder.cs" />
+    <Compile Include="EndPoints\HIstory\HistoryBuilder.cs" />
+    <Compile Include="EndPoints\Presence\GetStateBuilder.cs" />
+    <Compile Include="EndPoints\Presence\HereNowBuilder.cs" />
+    <Compile Include="EndPoints\Presence\Presence.cs" />
+    <Compile Include="EndPoints\Presence\SetStateBuilder.cs" />
+    <Compile Include="EndPoints\Presence\WhereNowBuilder.cs" />
+    <Compile Include="EndPoints\PubSub\FireBuilder.cs" />
+    <Compile Include="EndPoints\PubSub\PublishBuilder.cs" />
+    <Compile Include="EndPoints\PubSub\SubscribeBuilder.cs" />
+    <Compile Include="EndPoints\PubSub\UnsubscribeAllBuilder.cs" />
+    <Compile Include="EndPoints\PubSub\UnsubscribeBuilder.cs" />
+    <Compile Include="EndPoints\Push\AddChannelsToPushBuilder.cs" />
+    <Compile Include="EndPoints\Push\ListPushProvisionsBuilder.cs" />
+    <Compile Include="EndPoints\Push\RemoveAllPushChannelsForDeviceBuilder.cs" />
+    <Compile Include="EndPoints\Push\RemoveChannelsFromPushBuilder.cs" />
+    <Compile Include="EndPoints\TimeBuilder.cs" />
+    <Compile Include="Entities\ChannelEntity.cs" />
+    <Compile Include="Entities\ChannelIdentity.cs" />
+    <Compile Include="Entities\ChannelParameters.cs" />
+    <Compile Include="Entities\QueueStorage.cs" />
+    <Compile Include="Enum\HTTPMethod.cs" />
+    <Compile Include="Enum\PNCurrentRequestType.cs" />
+    <Compile Include="Enum\PNErrorData.cs" />
+    <Compile Include="Enum\PNHeartbeatNotificationOption.cs" />
+    <Compile Include="Enum\PNLogVerbosity.cs" />
+    <Compile Include="Enum\PNOperationType.cs" />
+    <Compile Include="Enum\PNPushType.cs" />
+    <Compile Include="Enum\PNReconnectionPolicy.cs" />
+    <Compile Include="Enum\PNStatusCategory.cs" />
+    <Compile Include="Events\CustomEventArgs.cs" />
+    <Compile Include="Events\EventExtenstions.cs" />
+    <Compile Include="ExceptionHandlers\ExceptionHandlerEventArgs.cs" />
+    <Compile Include="Helpers\CommonText.cs" />
+    <Compile Include="Helpers\CustomException.cs" />
+    <Compile Include="Helpers\Helpers.cs" />
+    <Compile Include="Helpers\SafeDictionary.cs" />
+    <Compile Include="Helpers\Utility.cs" />
+    <Compile Include="Interface\IPubNubNoChannelsBuilder.cs" />
+    <Compile Include="Interface\IPubNubNonSubscribeBuilder.cs" />
+    <Compile Include="Interface\IPubNubSubcribeBuilder.cs" />
+    <Compile Include="Logger\PNLoggingMethod.cs" />
+    <Compile Include="Managers\PNLatencyManager.cs" />
+    <Compile Include="Managers\QueueManager.cs" />
+    <Compile Include="Managers\RequestQueue.cs" />
+    <Compile Include="Models\Consumer\ChannelGroup\PNChannelGroupsAddChannelResult.cs" />
+    <Compile Include="Models\Consumer\ChannelGroup\PNChannelGroupsAllChannelsResult.cs" />
+    <Compile Include="Models\Consumer\ChannelGroup\PNChannelGroupsDeleteGroupResult.cs" />
+    <Compile Include="Models\Consumer\ChannelGroup\PNChannelGroupsListAllResult.cs" />
+    <Compile Include="Models\Consumer\ChannelGroup\PNChannelGroupsRemoveChannelResult.cs" />
+    <Compile Include="Models\Consumer\History\PNDeleteMessagesResult.cs" />
+    <Compile Include="Models\Consumer\History\PNFetchMessagesResult.cs" />
+    <Compile Include="Models\Consumer\History\PNHistoryResult.cs" />
+    <Compile Include="Models\Consumer\PNResult.cs" />
+    <Compile Include="Models\Consumer\PNStatus.cs" />
+    <Compile Include="Models\Consumer\PNTimeResult.cs" />
+    <Compile Include="Models\Consumer\Presence\PNGetStateResult.cs" />
+    <Compile Include="Models\Consumer\Presence\PNHereNowResult.cs" />
+    <Compile Include="Models\Consumer\Presence\PNPresenceHeartbeatResult.cs" />
+    <Compile Include="Models\Consumer\Presence\PNSetStateResult.cs" />
+    <Compile Include="Models\Consumer\Presence\PNWhereNowResult.cs" />
+    <Compile Include="Models\Consumer\Publish\PNPublishResult.cs" />
+    <Compile Include="Models\Consumer\PubSub\PNLeaveRequestResult.cs" />
+    <Compile Include="Models\Consumer\PubSub\PNMessageResult.cs" />
+    <Compile Include="Models\Consumer\PubSub\PNPresenceEvent.cs" />
+    <Compile Include="Models\Consumer\PubSub\PNPresenceEventResult.cs" />
+    <Compile Include="Models\Consumer\PubSub\SubscribeEnvelope.cs" />
+    <Compile Include="Models\Consumer\PubSub\SubscribeMessage.cs" />
+    <Compile Include="Models\Consumer\PubSub\TimetokenMetadata.cs" />
+    <Compile Include="Models\Consumer\Push\PNPushAddChannelResult.cs" />
+    <Compile Include="Models\Consumer\Push\PNPushListProvisionsResult.cs" />
+    <Compile Include="Models\Consumer\Push\PNPushRemoveAllChannelsResult.cs" />
+    <Compile Include="Models\Consumer\Push\PNPushRemoveChannelResult.cs" />
+    <Compile Include="Models\Server\BuildRequests.cs" />
+    <Compile Include="Models\Server\RequestState.cs" />
+    <Compile Include="Models\Server\Subscription.cs" />
+    <Compile Include="PubNub.cs" />
+    <Compile Include="PubNubUnity\PNConfiguration.cs" />
+    <Compile Include="PubNubUnity\PubNubUnity.cs" />
+    <Compile Include="PubNubUnity\PubNubUnityBase.cs" />
+    <Compile Include="Serialization\JSONSerializer.cs" />
+    <Compile Include="ThirdParty\MiniJSON.cs" />
+    <Compile Include="WebRequest\PNUnityWebRequest.cs" />
+    <Compile Include="WebRequest\UnityWebRequestWrapper.cs" />
+    <Compile Include="Workers\HeartbeatWorker.cs" />
+    <Compile Include="Workers\NonSubscribeWorker.cs" />
+    <Compile Include="Workers\PresenceHeartbeatWorker.cs" />
+    <Compile Include="Workers\SubscriptionWorker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ThirdParty\BouncyCastle.dll" />
+    <Content Include="ThirdParty\JsonFx.Json.dll" />
+    <Content Include="ThirdParty\MarkerMetro.Unity.WinLegacy.dll" />
+    <Content Include="ThirdParty\Metro\crypto.dll" />
+    <Content Include="ThirdParty\Metro\JsonFx.Json.dll" />
+    <Content Include="ThirdParty\Metro\MarkerMetro.Unity.WinLegacy.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
