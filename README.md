@@ -1,6 +1,6 @@
-# Kerlexa
+# Kerlexa 
 
-## Inspiration
+## Inspiration for Kerlexa
 
 Stranded out there, amongst the stars, stands a lonely little green man, left with only his thoughts to explore the star system he calls home. When he was a child, he heard stories about brave individuals who sought to expand their civilization's reach in the name of science. But he would not just look up to these individuals, he would become one of them, all alone on the most desert-ish planet in his star system; Duna. But was he really alone? Or did Jebadiah Kerman have a friend the whole time? After all, the fine engineers on Kerbin were able to scavenge him an Artificial Intelligence they found just lying around, Amazon's Alexa.
 
