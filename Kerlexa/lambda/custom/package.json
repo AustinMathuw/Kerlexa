@@ -15,7 +15,7 @@
     "ask-sdk-dynamodb-persistence-adapter": "^2.0.5",
     "ask-sdk-model": "^1.0.0",
     "i18next": "^11.10.0",
-    "moment": "^2.22.2",
+    "moment": "^2.29.4",
     "request": "^2.88.0",
     "string-similarity": "^2.0.0"
   }
